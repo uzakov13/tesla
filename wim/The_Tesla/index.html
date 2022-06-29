@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="./img/tesla.png" class="tesla">
+            <img src="./img/wheel.avif" class="wheel">
+            <img src="./img/wheel.avif" class="wheel2">
+        </div>
+        <div class="about">
+            <div class="top">
+                <div class="left">
+                    <p>Запас хода</p>
+                    <h2 class="zapas"></h2>
+                </div>
+                <div class="right">
+                    <p>Цена</p>
+                    <h2 class="price"></h2>
+                </div>
+            </div>
+            <div class="bottom">
+                <div>
+                    <p>Скорость автомобиля</p>
+                    <h2 class="speed"></h2>
+                </div>
+                <div class="tp">
+                    <img class="speedtop" src="./img/top.png">
+                    <img class="speedbot" src="./img/bottom.png">
+                </div>
+                <div>
+                    <p>Температура за окнами</p>
+                    <h2 class="temp"></h2>
+                </div>
+                <div class="tp">
+                    <img src="./img/top.png" class="temptop">
+                    <img src="./img/bottom.png" class="tempbot">
+                </div>
+                <div>
+                    <p>Диски</p>
+                    <h2 class="disk"></h2>
+                </div>
+                <div class="tp">
+                    <img src="./img/top.png" class="disktop">
+                    <img src="./img/bottom.png" class="diskbot">
+                </div>
+                <div>
+                    <p>Кондиционер</p>
+                    <input type="checkbox" class="kond">
+                </div>
+                <div>
+                    <p>Версия Long Range</p>
+                    <input type="checkbox" class="version">
+                </div>
+                <div>
+                    <p>Вид автомобиля</p>
+                    <input type="checkbox" checked class="view">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

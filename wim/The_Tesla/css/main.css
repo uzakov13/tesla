@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    width: 1440px;
+    margin: 0 auto;
+    font-family: Gilroy;
+}
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.top {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 30px;
+}
+.bottom {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 60px;
+}
+p {
+    font-size: 22px;
+    color: #707070;
+}
+h2 {
+    font-size: 48px;
+}
+.tp {
+    padding-top: 30px;
+}
+input[type="checkbox"]{
+    margin-top: 10px;
+    position: relative;
+    width: 55px;
+    height: 30px;
+    -webkit-appearance: none;
+    background: #c6c6c6;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    transition: .5s ease;
+}
+input:checked[type="checkbox"]{
+    background: #03a9f4;
+
+}
+input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s ease;
+}
+input:checked[type="checkbox"]::before{
+    left: 30px;
+}
+.wheel {
+    position: absolute;
+    top: 340px;
+    left: 620px;
+    width: 120px;
+    animation: wheels .3s ease 7ms infinite;
+}
+.wheel2 {
+    position: absolute;
+    top: 340px;
+    left: 1100px;
+    width: 120px;
+    animation: wheels .3s ease 7ms infinite;
+}
+@keyframes wheels {
+    0% {
+      transform: rotateZ(0deg);
+    }
+      25%{
+      transform: rotateZ(-90deg);
+      }
+      50%{
+      transform: rotateZ(-120deg);
+      }
+      75%{
+      transform: rotateZ(-240deg);
+      }
+    100% {
+      transform: rotateZ(-360deg);
+    }
+  }
+.black {
+    width: 35px;
+    height: 35px;
+    background: black;
+    border-radius: 50%;
+}
+.white {
+    width: 35px;
+    height: 35px;
+    background: rgb(205, 201, 201);
+    border-radius: 50%;
+}
+.gold{
+    width: 35px;
+    height: 35px;
+    background: gold;
+    border-radius: 50%;
+}
+.size {
+    width: 1240px;
+    height: 697px;
+}
